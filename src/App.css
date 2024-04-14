@@ -1,0 +1,107 @@
+.App {
+  text-align: center;
+  margin: 0 auto;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+}
+
+header h1 {
+  margin: 0;
+}
+
+main {
+  flex: 1;
+  padding: 20px 0;
+}
+
+.upload-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.file-input {
+  display: none;
+}
+
+.file-input-label {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.submit-button {
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.submit-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.image-preview {
+  width: 300px;
+  height: 300px;
+  border: 2px dashed #aaa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.image-preview img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.empty-box {
+  width: 300px;
+  height: 300px;
+  border: 2px dashed #aaa;
+  margin-bottom: 10px;
+}
+
+.result-container {
+  margin-top: 20px;
+}
+
+.result {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.result.fake {
+  color: red;
+}
+
+.result.real {
+  color: green;
+}
+
+.error {
+  color: red;
+  margin-bottom: 20px;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 0;
+  width: 100%;
+}
